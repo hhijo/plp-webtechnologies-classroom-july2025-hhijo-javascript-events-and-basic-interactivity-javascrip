@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My Interactive Web Page</h1>
+
+  <!-- FORM SECTION -->
+  <section id="form-section">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email"><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- INTERACTIVE SECTION 1 -->
+  <section id="counter-section">
+    <h2>Click Counter</h2>
+    <button id="counterBtn">Click Me!</button>
+    <p>Button clicked: <span id="counter">0</span> times</p>
+  </section>
+
+  <!-- INTERACTIVE SECTION 2 -->
+  <section id="color-section">
+    <h2>Background Color Changer</h2>
+    <button id="colorBtn">Change Background Color</button>
+  </section>
+
+  <!-- MODAL POPUP -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>🎉 Success!</h2>
+      <p>Your form has been submitted successfully.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
